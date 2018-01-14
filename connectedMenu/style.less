@@ -1,0 +1,38 @@
+* {
+	margin: auto;
+	padding: 0;
+}
+
+.tabsHorizontal {
+	width: 520px;
+	box-sizing: border-box;
+	border: 10px groove #0000FF;
+	background-color: #7FFFD4;
+	padding: 10px;
+	.tabsCaption {
+		margin-top: 10px;
+		cursor: pointer;
+		span {
+			background-color: #00FFFF;
+			padding: 6.1px;
+			&:hover {
+				background-color: #AFEEEE;
+			}
+		}
+		.activeCaption {
+			background-color: #E0FFFF;
+			&:hover {
+				background-color: #E0FFFF
+			}
+		}
+	}
+	.tabsContent {
+		margin-top: 5px;
+		background-color: #E0FFFF;
+		padding: 5px;
+		display: none;
+	}
+	.activeContent {
+		display: block;
+	}
+}

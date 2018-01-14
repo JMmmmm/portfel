@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>Page Title</title>
+	<meta charset="UTF-8">
+	<link href="style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="tabsHorizontal">
+		<div class="tabsCaption">
+			<span class="activeCaption">Первый раздел</span>
+			<span>Второй раздел</span>
+			<span>Третий раздел</span>
+			<span>Четвертый раздел</span>
+		</div>
+		<div class="tabsContent activeContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia explicabo vitae velit, commodi quam laudantium molestiae praesentium ipsam sint consectetur aliquam libero eum culpa provident, enim dolorem accusantium. Quae. Первый раздел
+		</div>
+		<div class="tabsContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia explicabo vitae velit, commodi quam laudantium molestiae praesentium ipsam sint consectetur aliquam libero eum culpa provident, enim dolorem accusantium. Quae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia explicabo vitae velit, commodi quam laudantium molestiae praesentium ipsam sint consectetur aliquam libero eum culpa provident, enim dolorem accusantium. Quae. 2
+		</div>
+		<div class="tabsContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia explicabo vitae velit, commodi quam laudantium molestiae praesentium ipsam sint consectetur aliquam libero eum culpa provident, enim dolorem accusantium. Quae.jkhjhjh 3.
+		</div>
+		<div class="tabsContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia explicabo vitae velit, commodi quam laudantium molestiae praesentium ipsam sint consectetur aliquam libero eum culpa provident, enim dolorem accusantium. Quae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia explicabo vitae velit, commodi quam laudantium molestiae praesentium ipsam sint consectetur aliquam libero eum culpa provident, enim dolorem accusantium. Quae.uhuhuhu 4.
+		</div>
+	</div>
+	<script>
+		$(document).ready(function () {
+			$("div.tabsCaption").on("click", "span:not(.activeCaption)", function () {
+				$(this).addClass("activeCaption").siblings().removeClass("activeCaption");
+				$(".tabsHorizontal").find(".tabsContent").removeClass("activeContent");
+				$(".tabsContent").eq($(this).index()).addClass("activeContent");
+			});
+		});
+	</script>
+</body>
+
+</html>

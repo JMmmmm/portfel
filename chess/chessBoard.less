@@ -1,0 +1,36 @@
+* {
+	margin: auto;
+	padding: 0;
+	font-family: sans-serif;
+	font-weight: 500;
+}
+
+.board {
+//	width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: content-box;
+	border: 5px solid chocolate;
+	text-align: center;
+	font-size: 30px;
+	// добавить переворачивание через css
+	.cellWhite {
+//		width: 100px;
+//		height: 100px;
+		background-color: beige;
+		box-shadow: 2px 0 0 0 #888, 0 2px 0 0 #888, 2px 2px 0 0 #888, /* Just to fix the corner */
+		2px 0 0 0 #888 inset, 0 2px 0 0 #888 inset;
+	}
+	.cellBlack {
+//		width: 100px;
+//		height: 100px;
+		background-color: sandybrown;
+		box-shadow: 2px 0 0 0 #888, 0 2px 0 0 #888, 2px 2px 0 0 #888, /* Just to fix the corner */
+		2px 0 0 0 #888 inset, 0 2px 0 0 #888 inset;
+	}
+	.cellBoard {
+//		width: 100px;
+//		height: 100px;
+		background-color: bisque;
+	}
+}

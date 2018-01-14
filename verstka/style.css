@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+.header {
+    background-color: #abeafa;
+    width: 1500px;
+    height: 700px;
+}
+.header .logo {
+    margin: 24px 0px 0px 234px;
+    background-image: url(images/logo.png);
+    width: 125px;
+    height: 111px;
+    float: left;
+}
+.header .icons {
+    float: right;
+    margin: 50px 229px 0px 0px;
+    width: 120px;
+    height: 16px;
+    background-image: url(images/Menu.png);
+    
+}
+.clear {
+    clear: both;
+}
+.header .welcome {
+    background-color:  #fff51f;
+    width: 220px;
+    height: 300px;
+    margin: 201px 0px 0px 165px;
+    padding: 0px 25px;
+    float: left;
+}
+.header .welcome h3 {
+    color:  #333333;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 82px;
+    margin-bottom: 24px;
+}
+.header .welcome p {
+    color:  #333333;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+}
+.header .JP {
+    float: right;
+    margin-top: 108px;
+    margin-right: 274px;
+    width: 313px;
+    height: 280px;
+}
+.header .JP h3 {
+    color:  #fff51f;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.header .JP p {
+    color:  #fff51f;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+	margin-bottom: 62px;
+}
+.header .JP .button {
+	background-color:  #fff51f;
+	width: 124px;
+	height: 32px;
+	color:  #000000;
+	font-size: 14px;
+	font-weight: 800;
+	text-align: center;
+    padding-top: 17px;
+    text-transform: uppercase;
+}
+.header .JP .but {
+    text-decoration: none;
+}
+.header .JP .button:hover {
+    background-color: bisque;
+}
+.header .JP .button:active {
+    position: relative;
+    top:3px;
+}
+.contant {
+	background-color: #f8f8f8;
+	width: 1500px;
+}
+.contant .left {
+	float: left;
+}
+.contant  .left .menu {
+	background-color:  #26d2fc;
+	width: 270px;
+	margin-left: 165px;
+	margin-top: -19px;
+}
+.contant .left .menu  li {
+	font-size: 14px;
+	font-weight: 900;
+	line-height: 36px;
+	text-align: left;
+	list-style-type: none;
+	text-transform: uppercase;
+	padding-left: 42px;
+}
+.contant .left .menu  li a {
+	text-decoration: none;
+	color:  #000000;
+}
+.contant .left .menu li:first-child {
+	background-color:  #333333;
+	width: 228px;
+	height: 48px;
+	color: #ffffff;
+	padding-left: 42px;
+	padding-top: 21px;
+	display:block;
+}
+.contant .left .menu li:hover {
+	background-color:  #333333;
+}
+.contant .left .menu li:hover a {
+	color: #ffffff;
+}
+.contant .left .menu li:last-child {
+	padding-bottom: 13px;
+}
+.contant .left .reklama {
+	margin-top: 30px;
+	margin-left: 165px;
+	background-color:  #e0e0e0;
+	width: 128px;
+	height: 171px;
+	padding-top: 129px;
+	padding-left: 142px;
+}
+.contant .left .reklama p {
+	color:  #333333;
+	font-size: 36px;
+	font-weight: 800;
+	line-height: 36px;
+	text-align: left;
+}
+.contant .right {
+	float: right;
+}
+.contant .right .new {
+	background-color:  #f8f8f8;
+	width: 870px;
+	margin-right: 165px;
+	margin-top: -19px;
+}
+.contant .right .top, .sale {
+	background-color:  #f8f8f8;
+	width: 870px;
+	margin-right: 165px;
+	margin-top: 46px;
+}
+.contant .right h3 {
+	text-transform: uppercase;
+	color:  #707070;
+	font-size: 22px;
+	font-weight: 900;
+	font-style: italic;
+	text-align: left;
+	padding-top: 31px;
+	padding-left: 25px;
+}
+.contant .right li {
+	background-color:  #ffffff;
+	width: 270px;
+	height: 320px;
+	float: left;
+	margin-top: 31px;
+    list-style-type: none;
+    position: relative;
+}
+.contant .right img {
+	background-color:  #eaeaea;
+	width: 250px;
+	height: 235px;
+	margin: 10px;
+}
+.contant .right .l {
+	float: left;
+	margin-top: 24px;
+	margin-left: 26px;
+	color:  #333333;
+	font-size: 14px;
+	font-weight: 900;
+	font-style: italic;
+	line-height: 18.012px;
+	text-align: left;
+}
+.contant .right .r {
+	float: right;
+	margin-top: 24px;
+	margin-right: 22px;
+	color:  #333333;
+	font-size: 18px;
+	font-weight: 900;
+	font-style: italic;
+	text-align: right;
+}
+.contant .right .rn {
+	clear: both;
+	float: right;
+	margin-right: 22px;
+	color:  #e24602;
+	font-size: 14px;
+	font-weight: 900;
+	font-style: italic;
+	text-align: right;
+	text-decoration: line-through;
+	overflow: hidden;
+}
+.contant .right .rn2 {
+	clear: both;
+	float: right;
+	margin-top:-16px;
+	margin-right: 22px;
+	color:  #e24602;
+	font-size: 14px;
+	font-weight: 900;
+	font-style: italic;
+	text-align: right;
+	text-decoration: line-through;
+	overflow: hidden;
+}
+
+.contant .right li:nth-child(3n+2) {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.contant .right .new .corner1 {
+	position: absolute;
+    right: 0;
+    background-image: url(images/corner1.png);
+	width: 46px;
+    height: 46px;
+}
+.contant .right .new .corner2 {
+	position: absolute;
+    right: 0;
+    background-image: url(images/corner2.png);
+	width: 46px;
+    height: 46px;
+}
+.contant .brand {
+	margin-top: 30px;
+	margin-left: 165px;
+	background-color:  #ffffff;
+	width: 1170px;
+	height: 160px;
+	display: block;
+	background-image: url(images/brands.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contant .insta {
+	margin-left: 165px;
+	background-color:  #eaeaea;
+	width: 1170px;
+	height: 350px;
+	display: block;
+}
+
+.contant .insta a {
+    margin-left: 449px;
+    margin-top: 51px;
+}
+.contant .insta a > img {
+    width: 28px;
+    height: 28px;
+    margin-left: 449px;
+    margin-top: 60px;
+    float: left;
+}
+
+.contant .insta .ins1 {
+    color:  #333333;
+    font-size: 22px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: left;
+    text-decoration: none;
+    margin-top: 47px;
+    float: left;
+}
+.contant .insta .ins2 {
+    color:  #333333;
+    font-size: 18px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: left;
+    margin-top: 51px;
+    float: left;
+}
+.contant .insta li {
+    margin-top: 29px;
+    list-style-type: none;
+    width: 185px;
+    height: 185px;
+    float:left;
+    
+}
+.contant .insta li:nth-of-type(n+2){
+    margin-left: 12px;
+}
+.contant .f {
+	background-color:  #3b5997;
+	width: 390px;
+	height: 150px;
+	margin-left: 165px;
+	display: block;
+	float: left;
+    background-image: url(images/facebook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contant .bird {
+	background-color:  #3fccfd;
+	width: 390px;
+	height: 150px;
+	display: block;
+	float: left;
+	margin-left: 555;
+    background-image: url(images/twiter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contant .ap {
+	background-color:  #cb2027;
+	width: 390px;
+	height: 150px;
+	float: right;
+	margin-right: 165px;
+	display: block;
+    background-image: url(images/pinterest.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.clrfoot {
+    clear:both;
+    height: 350px;
+}
+.footer {
+    margin: 0 auto;
+    background-color:  #373737;
+    width: 1500px;
+    height: 348px;
+    margin-top: -348px;
+}
+.footer .accaunt, .support, .newsletter {
+    float:left;
+    margin-top: 75px;
+    margin-left: 60px;
+}
+.category {
+    float:left;
+    margin-top:75px; 
+    margin-left: 192px;
+    width: 85px;
+}
+.accaunt {
+    width: 113px;
+}
+.support {
+    width: 106px;
+}
+.newsletter {
+    width: 255px;
+}
+.about {
+    width: 242px;
+    margin-left: 90px;
+    float:left;
+    margin-top: 75px;
+}
+
+.footer li {
+    list-style-type: none;
+}
+.footer li a, .uni {
+    color:  #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+}
+.footer h3 {
+    color:  #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+}
+.footer ul {
+    margin-top: 28px;
+}
+.footer .uni {
+    margin-top: 8px;
+}
+.footer .newsletter .uni {
+    width: 192px;
+    margin-bottom: 20px;
+}
+.footer .newsletter input[type="text"] {
+    background-color:  #fff51f;
+    width: 160px;
+    height: 30px;
+    color:  #333333;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+    padding-left: 20px;
+    border: 1px solid black;
+}
+.footer .newsletter input[type="submit"] {
+    background-color:  #000000;
+    width: 71px;
+    height: 32px;
+    color:  #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    border: 1px solid black;
+}
+.footer .newsletter input[type="submit"]:hover {
+    background-color:  #6E6E6E;
+}
+.footer .newsletter input[type="submit"]:active {
+	position: relative;
+	top: 3px;
+}
+.footer .newsletter img {
+    margin-left: -7px;
+    margin-top: 45px;
+}
+.footer .about .left {
+    float: left;
+    margin-top: 10px;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.4px;
+    text-align: left;
+}
+.footer .about .right {
+    float: right;
+    margin-top: 3px;
+    margin-right: 82px;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+}
+.footer .about .left2 {
+    float: left;
+    margin-top: -5px;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.4px;
+    text-align: left;
+}
+.footer .about .right2 {
+    float: right;
+    margin-top: -12px;
+    margin-right: 54px;
+    color:  #faef03;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+}
+.downfoot {
+	margin-top:30px;
+	float:left;
+	background-color:  #333333;
+	width: 1500px;
+	height: 47px;
+}
+.downfoot .copyright {
+	float: left;
+	margin-left:171px;
+	margin-top:15px;
+	color:  #dad9d9;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 21.6px;
+	text-align: left;
+}
+@media screen and (min-width: 872px) and (max-width: 1325px) {
+    .new, .top, .sale {
+        width: 600px !important;
+        margin-right: 415px !important;   
+    }
+    .contant .right li {
+    margin-left:15px !important;
+    margin-right: 15px !important;
+    }
+    
+    
+}
+    
+
+
+
+
+
+
+
+

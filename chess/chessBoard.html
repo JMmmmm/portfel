@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>chessBoard</title>
+	<meta charset="UTF-8">
+	<link href="chessBoard.css" rel="stylesheet">
+</head>
+
+<body>
+	
+	<label for="size">Введите размер доски (от 1 до 10):</label><br>
+	<input type="text" id="size">
+	
+	<button onclick="go()">Сгенерировать</button>
+	
+	<script>
+		function chessBoard(widthAndHeight) {
+
+
+			//1. создание элементов доски
+			var board = document.createElement("div");
+			document.body.appendChild(board);
+			board.className = "board";
+
+			//1.1. создание белых клеток
+			function createWhiteCells() {
+
+				//формула
+				function createWhiteCellsInsert(startNumber, endNumber, growthNumber) {
+					function createWhiteCell() {
+						var cellWhite = document.createElement("div");
+						board.insertBefore(cellWhite, board.children[i]);
+						cellWhite.className = "cellWhite";
+						cellWhite.style.width = widthAndHeight / 10 + "px";
+						cellWhite.style.height = widthAndHeight / 10 + "px"
+					}
+					for (var i = startNumber; i <= endNumber; i += growthNumber) {
+						createWhiteCell();
+					}
+				}
+				//автосоздание белых клеток
+				function createAllWhiteCells() {
+					var start = 0;
+					for (j = 1; j <= 8; j++) {
+						createWhiteCellsInsert(start, start + 6, 2);
+
+						if (j % 2 == 0) {
+							start += 7;
+						} else {
+							start += 9;
+						}
+					}
+				}
+				createAllWhiteCells();
+			}
+
+			//1.2. создание черных клеток
+			function createBlackCells() {
+				function createBlackCell() {
+					var cellBlack = document.createElement("div");
+					board.appendChild(cellBlack);
+					cellBlack.className = "cellBlack";
+					cellBlack.style.width = widthAndHeight / 10 + "px";
+					cellBlack.style.height = widthAndHeight / 10 + "px";
+				}
+				for (var i = 1; i <= 32; i++) {
+					createBlackCell();
+				}
+			}
+
+			//1.3. создание буквенной и числовой нумерации доски
+			function createBoardCells() {
+
+				//формулы:
+				function createBoardCellsInsert(startNumber, endNumber, growthNumber, number) {
+					var up = 1;
+
+					function createBoardCell() {
+						var cellBoard = document.createElement("div");
+						board.insertBefore(cellBoard, board.children[i]);
+						cellBoard.className = "cellBoard";
+						cellBoard.style.width = widthAndHeight / 10 + "px";
+						cellBoard.style.height = widthAndHeight / 10 + "px";
+						if (number == 1) {
+							cellBoard.innerHTML = up++;
+						}
+					}
+					for (var i = startNumber; i <= endNumber; i += growthNumber) {
+						createBoardCell();
+					}
+				}
+
+				//первая строка
+				createBoardCellsInsert(0, 9, 1, null);
+
+				//левый столбец
+				createBoardCellsInsert(10, 80, 9, 1);
+
+				//правый столбец
+				createBoardCellsInsert(19, 89, 10, null);
+
+				//последняя строка
+				function createBoardCellsEnd() {
+					var letters = [null, "A", "B", "C", "D", "E", "F", "G", "H", null];
+
+					function createBoardCell(j) {
+						var cellBoard = document.createElement("div");
+						board.appendChild(cellBoard);
+						cellBoard.className = "cellBoard";
+						cellBoard.style.width = widthAndHeight / 10 + "px";
+						cellBoard.style.height = widthAndHeight / 10 + "px";
+						cellBoard.innerHTML = letters[j];
+					}
+					for (var i = 1; i <= 10; i++) {
+						createBoardCell(i - 1);
+					}
+				}
+				createBoardCellsEnd();
+			}
+
+
+
+			//установка ширины и высоты элементов
+			board.style.width = widthAndHeight + "px";
+
+
+
+
+			//запуск функций
+			createBlackCells();
+			createWhiteCells();
+			createBoardCells();
+
+		}
+		
+
+		function go(sizeValue){
+			var size = document.querySelector('#size');
+			var sizeValue = size.value;
+			chessBoard(sizeValue*300);
+			console.log(sizeValue);
+		}
+		
+	</script>
+</body>
+
+</html>
